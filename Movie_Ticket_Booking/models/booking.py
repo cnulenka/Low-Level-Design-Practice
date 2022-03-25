@@ -2,13 +2,15 @@ import uuid
 from Movie_Ticket_Booking.constants import BookingStatus
 from Movie_Ticket_Booking.exceptions import InvalidStateException
 
+
 class Booking:
 
-    def __init__(self, show, booked_seats):
+    def __init__(self, show, booked_seats, user):
         self.__id = uuid.uuid4()
         self.__show = show
         self.__booked_seats = booked_seats
         self.__status = BookingStatus.CREATED
+        self.__user = user
 
     def is_confirmed(self):
         return self.__status == BookingStatus.CONFIRMED
