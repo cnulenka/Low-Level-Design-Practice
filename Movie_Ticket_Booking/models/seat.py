@@ -13,3 +13,6 @@ class Seat:
 
     def get_col_num(self):
         return self.__col_num
+
+    def get_id(self):
+        return self.__id
