@@ -1,0 +1,22 @@
+####  Design TicTacToe Game
+
+## Requirements
+
+- N*N board # N = 3, 4
+- 2 players
+- Winner decided as per standard rules
+- Human player only
+
+## Future scope
+
+- Rules to decide winner can change in future
+- Computer player
+- Different levels of computer player -> Easy, Medium, Hard difficulty
+
+
+Game
+    Board
+        N*N grid
+    Player
+        - HP
+        - CP
